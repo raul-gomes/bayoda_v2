@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>Chá BabbYoda</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'media_queries.css' %}">
+
+    {% block import%}
+    {% endblock %}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header> 
+      <div id="conteiner__header">
+        <img src="{% static 'imagens/babyoda_cabecalho.png' %}" alt="babyoda rodapé" class="header--imagem">
+        <img src="{% static 'imagens/titulo2.png' %}" alt="Chá de fraldas Baby yoda" class="header--titulo">
+      </div>
+    </header>
+
+    <nav>
+
+      <div id="conteiner__nav">
+        <a href="" class='navbar'>home</a>
+        <a href="" class='navbar'>lista</a>
+        <a href="" class='navbar'>carrinho</a>
+        <a href="" class='navbar'>evento</a>
+        <a href="" class='navbar'>álbum</a>
+        <a href="" class='navbar'>comentários</a>
+      </div>
+
+    </nav>
+    
+    <main>
+      <div id="container__main">
+        {% block content%}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div id="conteiner__footer">
+          <img src="{% static 'imagens/bayoda_rodape.png' %}" alt="babyoda rodapé" class="footer--imagem">
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>

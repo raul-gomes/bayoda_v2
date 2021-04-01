@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/static/imagens/background200px.png');
+    background-repeat: repeat;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 5vh 70vh 10vh;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #20344C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#conteiner__header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#conteiner__header img{
+    max-width:95%;
+    max-height:95%;
+    width: auto;
+    height: auto;
+}
+
+.header--titulo {
+    position: absolute;
+    top: 3%;
+    left: 12%;
+}
+
+
+nav {
+    grid-area: nav;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+#conteiner__nav {
+    display: flex;
+    border: 2px solid #8698b6;
+    border-radius: 10px;
+    background-color: #20344C;
+}
+
+.navbar {
+    color: #8698b6;
+    text-decoration: none;
+    border-right: 1px solid #8698b6;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#conteiner__nav  a:last-child {
+    border-right: none;
+}
+
+.navbar:hover {
+    color: #20344C;
+    background-color: #8698b6;
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container__main{
+    width: 95%;
+    height: 95%;
+    background: #8698b6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #20344C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#conteiner__footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#conteiner__footer img {
+    max-width:90%;
+    max-height:95%;
+    width: auto;
+    height: auto;
+}
