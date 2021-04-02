@@ -1,0 +1,40 @@
+{% extends "babyoda/index.html" %}
+
+{% load static %}
+
+{% block import%}
+
+    <link rel="stylesheet" href="{% static 'css/mensagens.css' %}">
+
+{% endblock %}
+
+
+{% block content%} 
+
+    <div class="conteiner__mensagem">
+
+        <h1 class="titulo__mensagem">Deixe sua mensagem</h1>
+
+        <form method="post"> {% csrf_token %}
+
+            <div class="mensagem__form">
+
+                <input type="text" name="nome" placeholder='nome' maxlength="255" required id="id_nome">
+                <textarea id="txtArea" name='mensagem' class="mensagem__corpo" placeholder="deixe sua mensagem"></textarea>
+                
+                <input type="submit" value="enviar" class="form__btn">
+                
+            </div>
+
+        </form>
+    </div>
+
+    {% if messages %}
+        <div class='conteiner__mensagem-retorno'>
+            <div class='mensagem__retorno '>
+                {{ messages }}
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

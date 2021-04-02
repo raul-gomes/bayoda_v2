@@ -1,0 +1,34 @@
+
+
+.conteiner__evento {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: scroll;
+}
+
+.titulo {
+    color: #103D02;
+    margin: 10px;
+    text-align: center;
+}
+
+.local {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.conteiner__mapa {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+.conteiner__home {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    
+}
+
+.titulo {
+    color: #103D02;
+    margin: 10px;
+    text-align: center;
+}
+
+.conteudo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    text-align: center;
+    overflow: scroll;
+}
+
+.conteudo__paragrafo {
+    margin: 10px;
+}
+

@@ -1,0 +1,23 @@
+.conteiner__album {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 95%;
+    width: 100%;
+}
+
+.titulo {
+    color: #103D02;
+    margin: 10px;
+    text-align: center;
+}
+
+.album__imagem--foto{
+    max-width: 250px;
+    max-height: 325px;
+    width: auto;
+    height: auto;
+    background-color: #20344C;
+    padding: 10px;
+    margin: 10px;
+}

@@ -12,7 +12,7 @@
     <title>Chá BabbYoda</title>
 
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'media_queries.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media_queries.css' %}">
 
     {% block import%}
     {% endblock %}
@@ -33,12 +33,12 @@
     <nav>
 
       <div id="conteiner__nav">
-        <a href="" class='navbar'>home</a>
+        <a href="{% url 'babyoda:home' %}" class='navbar'>home</a>
         <a href="" class='navbar'>lista</a>
         <a href="" class='navbar'>carrinho</a>
-        <a href="" class='navbar'>evento</a>
-        <a href="" class='navbar'>álbum</a>
-        <a href="" class='navbar'>comentários</a>
+        <a href="{% url 'babyoda:evento' %}" class='navbar'>evento</a>
+        <a href="{% url 'babyoda:galeria' %}" class='navbar'>galeria</a>
+        <a href="{% url 'babyoda:mensagens' %}" class='navbar'>mensagem</a>
       </div>
 
     </nav>
