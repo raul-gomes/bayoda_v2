@@ -1,0 +1,66 @@
+.conteiner__lista{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 95%;
+    width: 100%;
+    
+}
+
+.lista__titulo{
+    color: #103D02;
+    margin: 10px;
+}
+
+.box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #283966;
+    margin: 10px;
+}
+
+.box__imagem--foto {
+    max-width: 250px;
+    max-height: 325px;
+}
+
+.box__informacao{
+    display: flex;
+    color: #8698b6;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.informacao__item {
+    background-color: transparent;
+    color: #8698b6;
+    font-size: 14px;
+    border: none;
+    width: 80px;
+}
+
+.box__quantiadde {
+    margin: 5px;
+}
+
+.box__botao {
+    display: flex;
+    justify-content: center;
+}
+
+.form__btn {
+    background: #283966;
+    color: #8698b6;
+    border-radius: 20px;
+    width: 200px;
+    margin: 20px;
+
+}
+
+.form__btn:hover {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #283966; 
+    color: white;
+}

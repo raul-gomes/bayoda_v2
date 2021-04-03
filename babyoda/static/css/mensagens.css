@@ -31,7 +31,7 @@
 
 
 .form__btn {
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     border-radius: 20px;
     width: 200px;
@@ -39,7 +39,7 @@
 }
 
 .form__btn:hover {
-    background-color: #283966; /* Green */
+    background-color: #283966; 
     color: white;
 }
 

@@ -7,6 +7,8 @@ app_name = 'babyoda'
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('lista/', views.lista, name='lista'), 
+    path('carrinho/', views.carrinho, name='carrinho'),
     path('evento/', views.evento, name='evento'),
     path('galeria/', views.galeria, name='galeria'),
     path('mensagens/', views.mensagens, name='mensagens'),
